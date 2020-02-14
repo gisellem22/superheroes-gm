@@ -1,0 +1,13 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+  color: #333333;
+}
+
+.title {
+ border-bottom: 5px solid #4d4b4bcc;
+}
+.invalid-fb{
+   margin-top: .25rem;
+   font-size:80%;
+   color: #dc3545;
+}

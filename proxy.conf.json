@@ -1,0 +1,9 @@
+{
+    "/api": {
+      "target": "http://superheroapi.com",
+      "secure": false,
+      "pathRewrite": {"^/proxy" : ""},
+      "logLevel": "debug",
+      "changeOrigin": true
+    }
+  }
