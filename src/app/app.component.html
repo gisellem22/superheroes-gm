@@ -1,23 +1,25 @@
 <div class="container">
-  <div class="title text-center mt-3">
-    <h1>SUPER HEROES</h1>
+  <div class="row justify-content-center">
+  <div class="col-12 col-sm-12 col-md-10 col-lg-6">
+    <div class="title text-center mt-3">
+      <h1>SUPER HEROES</h1>
+    </div>
+    <div class="form-group mt-3">
+      <label for="heroesId">Enter a Heroe Id from 1 to 731:</label>
+      <div class="input-group mb-3">
+        <input type="number" id="heroesId"
+          placeholder="Ex.: 70" aria-label="search" aria-describedby="button-addon2"
+          [(ngModel)]="id" (keyup.enter)="byId(id)"
+         class="form-control" required>
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button" id="button-addon2" (click)="byId(id)">Search
+              </button>
+        </div>
+      </div>
+    </div>
   </div>
-	<div class="form-group mt-3">
-		<label for="heroesId">Enter a Heroe Id from 1 to 731:</label>
-		<div class="input-group mb-3">
-			<input type="number" id="heroesId"
-        placeholder="Ex.: 70" aria-label="search" aria-describedby="button-addon2"
-        [(ngModel)]="id" (keyup.enter)="byId(id)"
-       class="form-control" required>
-			<div class="input-group-append">
-				<button class="btn btn-outline-secondary" type="button" id="button-addon2" (click)="byId(id)">Search
-            </button>
-			</div>
-		</div>
-	</div>
 </div>
 
-<div class="container">
 			<div class="row justify-content-center">
         <div class="col-12 d-flex justify-content-center mt-5" *ngIf="!heroesImg">
           <div class="spinner-border text-primary text-dark" style="width: 5rem; height: 5rem;" role="status">
