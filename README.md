@@ -12,7 +12,7 @@ npm install
 Luego, para levantar la aplicación en ambiente local  debes ejecutar el comando:
 
 ```js
-ng serve --o
+ng serve -o
 ```
 
 ### Autor
